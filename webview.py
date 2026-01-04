@@ -22,7 +22,7 @@ gender = st.selectbox('Gender',df['gender'].unique())
 recruitment_channel = st.selectbox('Recruitment Channel',df['recruitment_channel'].unique())
 
 inputs = {
-    "employee_id": employee_id,
+  
     "no_of_trainings": no_of_trainings,
     "age": age,
     "previous_year_rating": previous_year_rating,
