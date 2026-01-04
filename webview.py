@@ -37,7 +37,7 @@ inputs = {
     "recruitment_channel": recruitment_channel
 }
 if(st.button("Predict")):
-  model = joblib.load("promotion_LR_Imb_model")
+  model = joblib.load("promotion_LR_Imb_model.pkl")
   X_inputs = pd.DataFrame([inputs])
   prediction = model.predict(X_inputs)
   st.write(prediction)
