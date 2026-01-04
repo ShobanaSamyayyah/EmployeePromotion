@@ -40,4 +40,5 @@ if(st.button("Predict")):
   model = joblib.load("XGB_Tune_0.39.pkl")
   X_inputs = pd.DataFrame([inputs])
   prediction = model.predict(X_inputs)
+  result= "Can be Promoted" if prediction[0] == 1 else "Not eligible for Promotion"
   st.write(prediction)
