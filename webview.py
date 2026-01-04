@@ -41,4 +41,4 @@ if(st.button("Predict")):
   X_inputs = pd.DataFrame([inputs])
   prediction = model.predict(X_inputs)
   result= "Can be Promoted" if prediction[0] == 1 else "Not eligible for Promotion"
-  st.write(prediction)
+  st.write(result)
